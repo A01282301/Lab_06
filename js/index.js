@@ -1,5 +1,5 @@
 
-let APIvalue = "AIzaSyCoLYDnUXr4aEwy8CYDNGUxQEuoOxBqwIg";
+let APIvalue = "AIzaSyDa4TgdW_Z4t-f5Nsd8Agm8HSEaimYgQlU";
 let search = document.getElementById("search");
 let keywordValue = "Doctor who";
 let videosToShow = document.getElementById("videos");
@@ -45,12 +45,13 @@ function displayResults( videoList ){
         let video = videoList.items[i];
         videosToShow.innerHTML = videosToShow.innerHTML + `
         <div id = "videoBox">
-               <p class = "videoTitle">
+               <p class="videoTitle">
                     <a href = "https://www.youtube.com/watch?v=${video.id.videoId}">${video.snippet.title}</a>
                 </p>
                 <a href = "https://www.youtube.com/watch?v=${video.id.videoId}"> <img src = "${video.snippet.thumbnails.high.url}"></a>
         </div>
         `;
+
    }
 
    nextPage = videoList.nextPageToken;
